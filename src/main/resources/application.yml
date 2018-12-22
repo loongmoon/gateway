@@ -24,5 +24,3 @@ zuul:
       path: /blog/**
       serviceId: BLOG
 
-
-logging.level.org.springframework.boot.autoconfigure: ERROR

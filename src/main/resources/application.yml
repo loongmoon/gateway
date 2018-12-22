@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: gateway
+  profiles:
+    active: local
+server:
+  port: 80
+  tomcat:
+    accept-count: 400
+    max-threads: 900
+    max-connections: 1000
+
+zuul:
+  host:
+    max-total-connections: 1000
+    max-per-route-connections: 1000
+    connect-timeout-millis: 4000
+  routes:
+    # 面向服务的路由
+    api-zone:
+      path: /zong/**
+      serviceId: ZONE
+    api-blog:
+      path: /blog/**
+      serviceId: BLOG

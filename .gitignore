@@ -1,5 +1,5 @@
 /target/*
-!/target/gateway-1.0-SNAPSHOT.jar
+!/target/gateway-*.jar
 /.idea
 *.iml
 /logs

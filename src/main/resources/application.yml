@@ -23,3 +23,6 @@ zuul:
     api-blog:
       path: /blog/**
       serviceId: BLOG
+
+
+logging.level.org.springframework.boot.autoconfigure: ERROR
